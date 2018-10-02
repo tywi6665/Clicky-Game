@@ -12,7 +12,16 @@ class App extends Component {
       <div>
         <Header />
         <Jumbotron />
-        
+        <div className="container">
+
+            <Card 
+              // imageClick={this.imageClick}
+              id={characters.id}
+              key={characters.id}
+              image={characters.image}
+            />
+            
+        </div>
         <Footer />
       </div>
     );
