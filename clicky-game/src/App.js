@@ -48,13 +48,14 @@ class App extends Component {
   };
 
   render() {
+    console.log("birthday twins 1/14")
     return (
       <div className="body">
         <Header
           score={this.state.score}
         />
         <Jumbotron />
-        <div className="container">
+        <div className="container" style={{minHeight:735}}>
           {this.state.characters.map(character => (
             <Card
               handleClick={this.handleClick}
