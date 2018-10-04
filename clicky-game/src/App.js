@@ -11,9 +11,10 @@ class App extends Component {
   state = {
     characters,
     score: 0,
-    clicked: []
+    highscore: 0
   };
 
+<<<<<<< HEAD
   handleClick = id => {
     if (this.state.clicked.includes(id)) {
       this.setState({ score: 0, clicked: [] });
@@ -47,24 +48,29 @@ class App extends Component {
     };
 
   };
+=======
+  // handleClick = event => {
+  //   const clicked = event.target.alt;
+  //   console.log(clicked);
+     
+  // }
+>>>>>>> parent of 8742de3... push
 
   render() {
     console.log("birthday twins 1/14")
     return (
-      <div className="body">
-        <Header
-          score={this.state.score}
-        />
+      <div>
+        <Header />
         <Jumbotron />
         <div className="container" style={{minHeight:735}}>
           {this.state.characters.map(character => (
-            <Card
-              handleClick={this.handleClick}
+            <Card 
+              //handleClick={this.handleClick}
               id={character.id}
               key={character.id}
               image={character.image}
             />
-          ))}
+            ))}
         </div>
         <Footer />
       </div>

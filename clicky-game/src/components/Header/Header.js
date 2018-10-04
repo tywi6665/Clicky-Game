@@ -8,6 +8,7 @@ class Header extends Component {
                 <ul>
                     <li className="title">Clicky Game</li>
                     <li className="score">Score: {this.props.score}</li>
+                    <li className="highscore">High Score: {this.props.highScore}</li>
                 </ul>
             </nav>
         );
