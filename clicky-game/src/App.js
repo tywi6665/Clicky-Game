@@ -25,6 +25,7 @@ class App extends Component {
       })
     } else {
       this.state.clicked.push(id);
+      console.log(this.state.clicked);
       this.setState({
         score: this.state.score + 1,
         characters: this.state.characters.sort(function (a, b) {
