@@ -11,7 +11,7 @@ class App extends Component {
   state = {
     characters,
     score: 0,
-    highscore: 0
+    clicked: []
   };
 
   handleClick = id => {
@@ -51,18 +51,20 @@ class App extends Component {
   render() {
     console.log("birthday twins 1/14")
     return (
-      <div>
-        <Header />
+      <div className="body">
+        <Header
+          score={this.state.score}
+        />
         <Jumbotron />
         <div className="container" style={{minHeight:735}}>
           {this.state.characters.map(character => (
-            <Card 
-              //handleClick={this.handleClick}
+            <Card
+              handleClick={this.handleClick}
               id={character.id}
               key={character.id}
               image={character.image}
             />
-            ))}
+          ))}
         </div>
         <Footer />
       </div>
@@ -71,3 +73,4 @@ class App extends Component {
 }
 
 export default App;
+
