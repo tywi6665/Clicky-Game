@@ -16,5 +16,5 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
-  "homepage": "https://tywi6665.github.io"
+  "homepage": "https://tywi6665.github.io/Clicky-Game"
 }
